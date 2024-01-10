@@ -1,55 +1,57 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0e6ff; /* Light purple background */
+  background-color: #ffffff; /* White background */
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .chat-widget {
-  width: 300px;
-  background-color: #b88cff; /* Purple chat widget */
-  border-radius: 10px;
-  margin: 20px;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px; /* Adjust the width as needed */
+  margin: 0 auto;
 }
 
-.chat-header {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.chat-messages {
-  height: 200px;
-  overflow-y: scroll;
-  background-color: #e6ccff; /* Light purple chat area */
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.chat-input {
+.chat-message {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
-input[type="text"] {
-  width: 70%;
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
+.username {
+  margin-right: 10px;
+  font-weight: bold;
 }
 
-button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #8a4dff; /* Darker purple send button */
-  color: white;
-  cursor: pointer;
+.message-bubble {
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #e6ccff; /* Light purple bubble background */
+  border: 2px solid #7b68ee; /* Lavender outline */
+  display: inline-block;
+  max-width: 70%;
+  word-wrap: break-word;
+  position: relative;
+  overflow: hidden;
 }
 
-button:hover {
-  background-color: #6a2cff; /* Darker color on hover */
+.message {
+  color: #ffffff; /* White text */
+  margin: 0;
+}
+
+.star {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url('path/to/star-icon.png'); /* Replace with your star icon */
+  animation: twirl 1s linear infinite;
+}
+
+@keyframes twirl {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
