@@ -17,24 +17,37 @@ body {
 }
 
 .username {
-  margin-right: 10px;
-  font-weight: bold;
+  margin-bottom: 5px;
+  color: #C7B1E4; /* Outline color for username */
+  text-align: left;
 }
 
 .message-bubble {
   position: relative;
   padding: 10px 15px;
   border-radius: 20px;
-  background-color: #e6ccff; /* Light purple bubble background */
-  border: 2px solid #7b68ee; /* Lavender outline */
+  background-color: #EFEAFF; /* Light purple bubble background */
+  border: 2px solid #C7B1E4; /* Lavender outline */
   display: inline-block;
   max-width: 70%;
   word-wrap: break-word;
   position: relative;
   overflow: hidden;
+  color: #C7B1E4; /* Text color */
 }
 
 .message {
-  color: #ffffff; /* White text */
   margin: 0;
+}
+
+.star {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #EFEAFF; /* Light purple star color */
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  transform: rotate(45deg);
+  border: 1px solid #EFEAFF; /* Light purple border around star */
+  top: -10px;
+  left: -15px;
 }
