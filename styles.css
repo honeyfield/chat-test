@@ -15,6 +15,7 @@ body {
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center horizontally */
   margin-bottom: 20px;
+  position: relative;
 }
 
 .message-bubble {
@@ -41,6 +42,9 @@ body {
 }
 
 .star {
+  position: absolute;
+  top: 50%;
+  left: -25px; /* Adjust this value to position the star */
   width: 20px;
   height: 20px;
   background-color: #EFEAFF; /* Light purple bubble inner color */
