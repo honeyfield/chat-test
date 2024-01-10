@@ -7,18 +7,14 @@
 </head>
 <body>
   <div class="chat-widget">
-    <div class="chat-header">
-      <h2>Welcome to Dreamy Chat</h2>
+    <div class="chat-message" style="--username-color: #7b68ee;">
+      <span class="username">Username</span>
+      <div class="message-bubble">
+        <div class="star"></div>
+        <p class="message">This is a sample chat message!</p>
+      </div>
     </div>
-    <div class="chat-messages" id="chat-messages">
-      <!-- Chat messages will appear here -->
-    </div>
-    <div class="chat-input">
-      <input type="text" id="message-input" placeholder="Type your message...">
-      <button onclick="sendMessage()">Send</button>
-    </div>
+    <!-- More chat messages can be added similarly -->
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
