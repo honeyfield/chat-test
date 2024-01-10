@@ -16,12 +16,6 @@ body {
   margin-bottom: 20px;
 }
 
-.username {
-  margin-bottom: 5px;
-  color: #C7B1E4; /* Outline color for username */
-  text-align: left;
-}
-
 .message-bubble {
   position: relative;
   padding: 10px 15px;
@@ -40,11 +34,17 @@ body {
   margin: 0;
 }
 
+.username {
+  text-align: center;
+  color: #C7B1E4; /* Outline color for username */
+  margin-bottom: 5px;
+}
+
 .star {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #EFEAFF; /* Light purple star color */
+  background-color: #EFEAFF; /* Light purple bubble inner color */
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   transform: rotate(45deg);
   border: 1px solid #EFEAFF; /* Light purple border around star */
