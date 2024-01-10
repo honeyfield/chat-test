@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0e6ff; /* Light purple background */
+  margin: 0;
+  padding: 0;
+}
+
+.chat-widget {
+  width: 300px;
+  background-color: #b88cff; /* Purple chat widget */
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.chat-messages {
+  height: 200px;
+  overflow-y: scroll;
+  background-color: #e6ccff; /* Light purple chat area */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.chat-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8a4dff; /* Darker purple send button */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6a2cff; /* Darker color on hover */
+}
